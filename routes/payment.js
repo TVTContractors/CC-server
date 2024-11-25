@@ -25,8 +25,8 @@ router.post('/create-payment-intent', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3000/all-orders',
-      cancel_url: 'http://localhost:3000/all-orders',
+      success_url: 'https://unique-cocada-11f946.netlify.app/all-orders',
+      cancel_url: 'https://unique-cocada-11f946.netlify.app/all-orders',
     });
 
     res.json({ id: session.id });
